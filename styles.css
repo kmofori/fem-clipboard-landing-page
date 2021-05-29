@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    /* display: flex; */
+    text-align: center;
+    max-width: 1440px;
+    min-width: 375px;
+}
+
+h1,
+h2,
+h3 {
+    color: hsl(210, 10%, 33%);
+    margin: 24px 0;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.7rem;
+}
+
+h3{
+    font-size: 1.4rem;
+}
+
+p {
+    color: hsl(201, 11%, 66%);
+    line-height: 1.6;
+    letter-spacing: 1px;
+    margin: 0 0 60px 0;
+}
+
+        /* button */
+button {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 18px;
+    color: white;
+    border: none;
+    border-bottom: 3px solid;
+    padding: 16px 64px;
+    border-radius: 32px;
+    width: 100%;
+    letter-spacing: 1px;
+}
+
+.download-iOS {
+    margin: 30px 0 15px 0;
+    background-color: hsl(171, 66%, 44%);
+    border-color: hsl(171, 100%, 25%);
+    box-shadow: 0px 10px 10px 5px hsla(171, 66%, 44%, 0.1);
+}
+
+.download-iOS:hover,
+.download-iOS:active {
+    filter: brightness(120%);
+}
+
+.download-mac {
+    margin: 15px 0 30px 0;
+    background-color: hsl(233, 100%, 69%);
+    border-color: hsl(233, 100%, 50%);
+    box-shadow: 0px 10px 10px 5px hsla(233, 100%, 69%, 0.1);
+}
+
+.download-mac:hover,
+.download-mac:active {
+    filter: brightness(120%);
+}
+/* button end*/
+
+        /* images */
+.snippets_computer,
+.access_devices {
+    max-width: 100%;
+}
+
+.customers_logo-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+/* images end*/
+
+        /* mobile first */
+
+header {
+    background-image: url("images/bg-header-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+}
+
+.background_header img {
+    align-items: center;
+    margin-top: 128px;
+}
+
+section {
+    margin: 0 32px;
+}
+
+.snippets_whole,
+.access_section,
+.workflow_section,
+.customers_logo-section,
+.clipboard_section {
+    margin-top: 128px;
+}
+
+
+        /* footer */
+
+footer {
+    background-color: hsla(201, 11%, 66%, 15%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 80vh;
+    margin-top: 256px;
+}
+
+.footer_logo {
+    margin: 0 32px;
+}
+
+.footer_logo img {
+    width: 81px;
+}
+
+.footer_links {
+    margin: 0 32px;
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    justify-content: space-between;
+}
+
+.footer_links a {
+    text-decoration: none;
+    color: hsl(201, 11%, 66%);
+    font-size: 1.2rem;
+}
+
+.footer_links a:hover, 
+.footer_links a:active {
+    color: hsl(171, 66%, 44%);
+}
+
+.social_media_icons {
+    margin: 0 32px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.social_media_icons a {
+    margin: 10px 20px;
+    height: 24px;
+    width: 24px;
+}
+
+.social_media_icons a svg path:hover {
+    fill: hsl(171, 66%, 44%);
+}
+
+@media (min-width: 560px) {
+
+    * {
+        margin: 0;
+    }
+
+    header {
+        background-image: url("images/bg-header-desktop.png");        
+    }
+
+    button {
+        padding: 16px 32px;
+    }
+
+    .download_buttons {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .download-iOS {
+        margin: 32px 16px;
+        width: 256px;
+    }
+
+    .download-mac {
+        margin: 32px 16px;
+        width: 256px;
+    }
+
+    .header_text {
+        max-width: 750px;
+        margin: auto;
+    }
+
+    .customers_logo-items {
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .customers_logo-items img {
+        margin: 32px;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: auto;
+        margin-top: 128px;
+        padding: 32px 0;
+    }
+
+    .footer_logo {
+        margin: auto 16px;
+    }
+
+    .footer_logo img {
+        width: 48px;
+    }
+
+    .footer_links {
+        flex-direction: row;
+        flex-wrap: wrap;        
+        margin: auto 0;
+        justify-content: flex-start;
+        max-width: 350px;
+        min-width: 250px;
+    }
+
+    .footer_links a {
+        margin: 8px 8px;
+    }
+
+    .social_media_icons {
+        margin: auto 0;
+        height: fit-content;
+    }
+    
+}
+
+@media (min-width: 1100px) {
+    
+    .snippets_section {
+        display: flex;
+    }
+
+    .snippets_section-details {
+        text-align: left;
+        margin-left: 96px;
+    }
+
+    .snippets_text {
+        max-width: 750px;
+        margin: auto;
+    }
+
+   
+    .snippets_section div {
+        align-self: center;
+    }
+
+    .snippets_computer {
+        position: relative;
+        right: 32px;
+        max-width: 690px;
+    }
+
+    .snippets_section-details {
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+    }
+    
+    .snippers_search-text,
+    .snippers_sync-text,
+    .snippers_history-text {
+        max-width: 400px;
+    }
+
+    .snippers_search-text p,
+    .snippers_sync-text p,
+    .snippers_history-text p {
+        margin: 0;
+    }
+
+    .access_devices {
+        max-width: 690px;
+    }
+
+    .workflow_details {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        max-width: 1200px;
+    }
+    .workflow_blacklist-icon,
+    .plain_snippets-icon,
+    .sneak_preview-icon {
+        height: 45px;
+    }
+
+    .workflow_blacklist-section,
+    .plain_snippets-section,
+    .sneak_preview-section {
+        flex: 1;
+    }
+
+    .footer_links {
+        max-width: none;
+    }
+
+    .footer_links :nth-of-type(1),
+    .footer_links :nth-of-type(2),
+    .footer_links :nth-of-type(3),
+    .footer_links :nth-of-type(4),
+    .footer_links :nth-of-type(5) {
+        width: 160px;
+    }
+}
